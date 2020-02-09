@@ -1,0 +1,24 @@
+body {
+    background: url('../img/burger4_1024x1024.jpg');
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: #778899;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 750px;
+}
+
+.uneaten,
+.eaten,
+.new-burger {
+    background-image: url('../img/235207.png');
+    flex: 1;
+}

@@ -2,13 +2,13 @@ $(function () {
     $(".monch").on("click", (event) => {
     const id = $(this).data("id");
 
-    const isEaten = {
+    const monched = {
         eaten: true
     };
 
-    $.ajax("/api/burgers/" + id, {
+    $.ajax(`/api/burgers/${id}`, {
         type: "PUT",
-        data: isEaten
+        data: monched
     }).then(() => {
         console.log(`changed eaten to: ${monched}`);
         location.reload();

@@ -4,9 +4,9 @@
     <h2>Unmonched Borgs:</h2>
     <ul>
         {{#each burgers}}
-        {{#unless eaten}}
-        {{> burgers/burger-block eaten=false}}
-        {{/unless}}
+            {{#unless eaten}}
+                {{> burgers/burger-block eaten=false}}
+            {{/unless}}
         {{/each}}
     </ul>
     </div>
@@ -15,9 +15,9 @@
         <h2>Been Monched:</h2>
         <ul>
             {{#each burgers}}
-            {{#if eaten}}
-            {{> burgers/burger-block eaten=true}}
-            {{/if}}
+                {{#if eaten}}
+                    {{> burgers/burger-block eaten=true}}
+                {{/if}}
             {{/each}}
         </ul>
     </div>
@@ -28,6 +28,13 @@
                 <label for="burg">New Borgor: </label>
                 <input type="text" id="borg" name="name" placeholder="New Borgor Name!">
             </div>
+            {{!-- <div class="form">
+                <label for="eaten">Already Monched?</label>
+                <div class="radio-buttons">
+                    <input type="radio" name="eaten" value="0">Ain't Monched<br>
+                    <input type="radio" name="eaten" value="1">Been Monched
+                </div>
+            </div> --}}
             <div class="form">
                 <button type="submit" id="new-burg">New Borger!</button>
             </div>

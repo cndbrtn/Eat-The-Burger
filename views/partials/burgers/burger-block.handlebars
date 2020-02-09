@@ -1,8 +1,8 @@
 <li>
-    {{name}}
+    {{id}}.{{name}}
 
-        {{#unless eaten}}
+    {{#unless eaten}}
 
-    <button class="monch" data-id="{{id}}" data-eaten="{{eaten}}" type="submit">Monch!</button>
+    <button class="monch" data-id="{{this.id}}" type="submit">Monch!</button>
     {{/unless}}
 </li>

@@ -9,9 +9,8 @@ const orm = {
         })
     },
     create: (table, cols, value, cb) => {
-        const queryString = `INSERT INTO ${table} (${cols}) VALUES (${value});`;
-
-        console.log(queryString, (err, res) => {
+        const queryString = `INSERT INTO ${table} (${cols}) VALUES (?);`;
+        connection.query(queryString, value, (err, res) => {
             if (err) throw err;
             cb(res);
         });
@@ -25,8 +24,8 @@ const orm = {
     //     })
     // }
   update: (table, col, value, id, cb) => {
-        let queryString = "UPDATE ?? SET ??=? WHERE id = ?;";
-        connection.query(queryString, [table, col, value, id], (err, res) => {
+        let queryString = `UPDATE ${table} SET ${col} = ? WHERE id = ?;`;
+        connection.query(queryString, [value, id], (err, res) => {
             console.log(queryString);
             if (err) throw err;
             cb(res);

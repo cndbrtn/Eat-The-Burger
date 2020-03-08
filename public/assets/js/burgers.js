@@ -1,17 +1,10 @@
 $(function () {
     $(".monch").on("click", function(event) {
-        // console.log(event)
-        const id = $(this).attr("data-id");
-        const name = $(this).attr("data-type")
-        const eaten = $(this).attr("data-eaten");
-        // console.log(`burger.js says this: ${$(this)}`)
-        // console.log(`burgers.js says: ${id}`);
-        // console.log(event.toElement.dataset.id)
-        // const id = event.toElement.dataset.id;
-        // const eaten = event.toElement.dataset.eaten;
-        // const name = event.toElement.dataset.type;
+    const id = $(this).attr("data-id");
+    const name = $(this).attr("data-type")
+    const eaten = $(this).attr("data-eaten");
 
-        console.log(`${id}. ${name} - ${eaten}`)
+    console.log(`${id}. ${name} - ${eaten}`)
 
     const isEaten = {
         eaten: true

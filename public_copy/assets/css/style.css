@@ -1,0 +1,49 @@
+body {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+    min-width: 365px;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+    width: 150px;
+}
+
+.create-form {
+    margin: auto;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.eat-burger {
+    border-radius: 10px;
+
+}
+
+.burg-row {
+    background-color: rgb(221, 166, 94);
+}
+
+.notBeenAte {
+    float: left;
+}
+.beenAte {
+    float: right;
+}
+
+h1 {
+    margin: auto;
+    padding: 10px;
+}
+h2 {
+    margin: auto;
+    color: rgb(70, 82, 100);
+}
+h4 {
+    margin: auto;
+}
+

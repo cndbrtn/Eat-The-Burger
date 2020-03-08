@@ -2,6 +2,7 @@
 Burger eating app using mysql and handlebars
 
 ## App deployed on Heroku
+![Burger App Header](https://github.com/cndbrtn/Homework13-Eat-The-Burger/blob/master/burger.png?raw=true)
 [Burger App on Heroku](https://secure-thicket-44414.herokuapp.com/)
 
 ## What does it do?
